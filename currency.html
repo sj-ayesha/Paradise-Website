@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Currency</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="css/custom.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script language="JavaScript">
+		function euroConverter(){
+			document.converter.dollar.value = document.converter.euro.value * 1.07
+			document.converter.pound.value = document.converter.euro.value * 0.71
+			document.converter.yuan.value = document.converter.euro.value * 6.84
+			document.converter.rupee.value = document.converter.euro.value * 38.73
+		}
+		
+		function dollarConverter(){
+			document.converter.euro.value = document.converter.dollar.value * 0.93
+			document.converter.pound.value = document.converter.dollar.value * 0.66
+			document.converter.yuan.value = document.converter.dollar.value * 6.37
+			document.converter.rupee.value = document.converter.dollar.value * 36.05
+		}
+		
+		function poundConverter(){
+			document.converter.dollar.value = document.converter.pound.value * 1.52
+			document.converter.euro.value = document.converter.pound.value * 1.41
+			document.converter.yuan.value = document.converter.pound.value * 9.66
+			document.converter.rupee.value = document.converter.pound.value * 54.72
+		}
+			
+		function yuanConverter(){
+			document.converter.dollar.value = document.converter.yuan.value * 0.16
+			document.converter.pound.value = document.converter.yuan.value * 0.10
+			document.converter.euro.value = document.converter.yuan.value * 0.15
+			document.converter.rupee.value = document.converter.yuan.value * 5.66
+		}
+		
+		function rupeeConverter(){
+			document.converter.dollar.value = document.converter.rupee.value * 0.028
+			document.converter.pound.value = document.converter.rupee.value * 0.018
+			document.converter.euro.value = document.converter.rupee.value * 0.026
+			document.converter.yuan.value = document.converter.rupee.value * 0.18
+		}
+
+	</script>
+    
+  </head>
+  <body>
+  <div class="wrapper">
+  <header>
+  <div class="row topbar">
+  <div class="col-sm-4">
+  <img src="paradise.png" width="220" height="96"/>
+  </div>
+  </div>
+    <nav class="navbar navbar-inverse navbar-fixed-top menu-background-full cl-effect-1">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-home"></span></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+        
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                	<a href="#" data-toggle="dropdown" class="dropdown-toggle">Mauritius<b class="caret"></b></a>
+                    	<ul class="dropdown-menu dropdown-menu-background">
+                        	<li><a href="geo.html">Geography &amp; Location</a></li>
+                            <li><a href="culture.html">Culture &amp; People</a></li>
+                            <li><a href="history.html">History</a></li>
+                            <li><a href="weather.html">Weather &amp; Climate</a></li>
+                            <li><a href="currency.html">Currency</a></li>
+        				</ul>
+         		</li>
+			</ul>
+            
+            <ul class="nav navbar-nav">
+            	<li><a href="see.html">What to see</a></li>
+            </ul>
+            
+            <ul class="nav navbar-nav">
+            	<li class="dropdown">
+                	<a href="#" data-toggle="dropdown" class="dropdown-toggle">What to do<b class="caret"></b></a>
+                    	<ul class="dropdown-menu dropdown-menu-background">
+                        	<li><a href="activities.html">Activities</a>
+                            <li><a href="shopresto.html">Shopping &amp; Restaurant</a></li>
+                        </ul>
+                </li>
+            </ul>
+			
+            <ul class="nav navbar-nav">
+        		<li><a href="stay.html">Where to stay</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+			
+            <ul class="nav navbar-nav navbar-right">
+            	<li><a href="account.html">My Account</a></li>
+            </ul>
+                  
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+    </header>
+
+    <div class="row content-head">
+    	<ol class="breadcrumb">
+        	<li><a href="index.html">Home</a></li>
+            <li><a href="mauritius.html">Mauritius</a></li>
+            <li class="active">Currency</li>
+        </ol>
+        
+    	<h1 style="text-align:center;"><strong>Currency</strong></h1>
+        
+        <hr> 
+         
+    </div>
+    
+    <div class="row content-body">
+    	<div class="col-sm-8">
+    		<img src="images/currency.jpeg" width="550" height="288" alt="currency.jpeg">
+         	
+            <hr>
+            
+            <p style="text-align: justify;">The rupee (sign: ₨; ISO 4217 code: MUR) is the currency of Mauritius. Several other currencies are also called rupee.</p>
+            <p style="text-decoration: underline;"><b>Convertor:</b>
+            
+            <form name="converter">
+				<table border="0">
+                
+					<tr>
+						<td>Euro: </td>
+                        <td><input type="text" name="euro" onChange="euroConverter()" /></td>
+					</tr>
+                    
+					<tr>
+						<td>US Dollar: </td>
+                        <td><input type="text" name="dollar" onChange="dollarConverter()" /></td>
+					</tr>
+                    
+					<tr>
+						<td>British Pound:</td>
+                        <td><input type="text" name="pound" onChange="poundConverter()" /></td>
+					</tr>
+                    
+					<tr>
+						<td>Yuan: </td>
+                        <td><input type="text" name="yuan" onChange="yuanConverter()" /></td>
+					</tr>
+                    
+                    <tr>
+						<td>Mauritian Rupee: </td>
+                        <td><input type="text" name="rupee" onChange="rupeeConverter()" /></td>
+					</tr>
+       
+					<tr>
+						<td colspan="2" align="center"><input type="button" value="Convert!" /></td>
+					</tr>
+				</table>
+			</form>
+
+      	</div>
+        
+        <div class="col-sm-4">
+        	<h3 style="color: #999;"><strong>Mauritius</strong></h3>
+        		<ul class="nav nav-pills nav-stacked">
+  					<li><a href="geo.html"><span class="glyphicon glyphicon-chevron-right"></span> Geography &amp; Location</a></li>
+					<li><a href="culture.html"><span class="glyphicon glyphicon-chevron-right"></span> Culture &amp People</a></li>
+					<li><a href="history.html"><span class="glyphicon glyphicon-chevron-right"></span> History</a></li>
+					<li><a href="weather.html"><span class="glyphicon glyphicon-chevron-right"></span> Weather &amp; Climate</a></li>
+            	</ul>
+        </div>
+
+        </div>
+        
+        <div class="row content-head">
+        	<h2 style="color:#337AB7; font-weight:bold;">Mauritius</h2>
+        </div>
+        
+        <div class="row content-bottom">
+        	<div class="col-sm-4">
+            	<img src="images/mru1.jpg" width="310" height="207" alt="mru1.jpg">
+                
+                <h3><a href="geo.html">Geography &amp; Location</a></h3>
+                
+                <p>The island of Mauritius is of volcanic origin and sits on an area of 1865 km², under the Tropics of Capricorn, 800 kms from the eastern coast of Madagascar, 200 kms to the north-east of Réunion and [...]</p>
+                
+                <a href="geo.html" class="btn btn-primary">Learn More</a>
+            </div>
+            
+            <div class="col-sm-4">
+            	<img src="images/Holi.jpg" width="310" height="207" alt="currency.jpg">
+                
+                <h3><a href="culture.html">Culture &amp; People</a></h3>
+                
+                <p>Mauritius is a multicultural island with people from all the continents established here, whose roots reach back in history to India, Madagascar, China, East Africa, England and France. The actual population [...]</p>
+                
+                <a href="culture.html" class="btn btn-primary">Learn More</a>
+            </div>
+            
+            <div class="col-sm-4">
+            	<img src="images/history1.jpg" width="310" height="207" alt="history1.jpg">
+                
+                <h3><a href="history.html">History</a></h3>
+                
+                <p>Learning about Mauritius history is quite fascinating. It is interesting to study the past which contributed a lot to the nowadays identity of Mauritius. Due to lack of documentary evidences from the first period [...]</p>
+                
+                <a href="history.html" class="btn btn-primary">Learn More</a>
+            </div>
+            
+        </div>
+    <!--/div-->
+    
+    
+    <footer>
+    	<ul> 
+			<li><a href="index.html">Home</a></li>
+            <li><a href="mauritius.html">Mauritius</a></li>
+			<li><a href="see.html">What to see</a></li>
+			<li><a href="#">What to do</a></li>
+			<li><a href="stay.html">Where to stay</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <p class="copyright">&copy; 2015 Paradise. All Rights Reserved.</p>
+	</footer>
+    
+    
+  </div><!--/.wrapper -->
+  
+  
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+  </body>
+</html>

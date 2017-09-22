@@ -1,0 +1,321 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face 
+{
+	font-family:"Scriptina";
+	src:url("../font/Scriptina_Pro.eot?") format("eot"),
+	url("../font/Scriptina_Pro.woff") format("woff"),
+	url("../font/Scriptina_Pro.ttf") format("truetype"),
+	url("../font/Scriptina_Pro.svg") format("svg");
+}
+
+header, footer {
+	background-color: #002841
+}
+
+
+.topbar {
+	margin: 0 auto;
+    width: 90%;
+    padding: 20px;
+}
+
+.menu-background-full {
+	/*background-image: url(../images/menu_bg.jpg);
+	background-repeat: repeat-x;*/
+	background-color: #37505E;
+    border-bottom: ridge 1px #00B1F5;
+}
+
+.dropdown-menu-background{
+	background-image: url(../images/dropmenu_bg.jpg);
+	background-repeat:repeat-x;	
+	border-radius: 0px 0px 10px 10px;
+}
+
+.mid-section{
+	margin:50px auto;
+	}
+	
+.mid-section img {
+	    box-shadow: grey 5px 5px 20px 0px;
+}
+
+.discover-section {
+	 background-color: #22A3CA;
+	 margin: 0;
+	}
+
+.discover-section img{
+	margin: 25px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+	}
+
+.para{
+	margin: 50px;
+	color: #FFF;
+	}
+
+.pagetitle { 
+	font-family:"Scriptina"; 
+    font-weight: bold;
+}
+
+.hrtitle
+{
+	margin-top:-10px;
+	background-color: grey;
+    height: 1px;
+}
+/*
+.wrapper {
+	width: 95%;
+    height: auto;
+    margin: 0 auto;
+}
+*/
+.wrapper nav
+{
+	position:static;
+	margin:0;
+}
+
+.text-wrap{
+	float:left;	
+	margin-right: 25px;
+	clear:left;
+}
+
+.sidebar{
+    padding-left: 45px;
+}
+
+.thumbnail:hover {
+    position:relative;
+    top:-25px;
+    left:-35px;
+    width:500px;
+    height:auto;
+    display:block;
+    z-index:999;
+}
+
+footer {
+	overflow: hidden;
+	border-top: ridge 1px #00B1F5;
+}
+
+footer ul { 
+    padding-top: 15px;
+	text-align:center; 
+	margin: 0;
+}
+
+footer ul li{
+	display: inline;	
+	margin: 0 10px 0 10px;
+}
+
+.copyright 
+{
+	text-align:center;
+	font-size:10px;
+	margin:10px auto;
+	color:#fff;
+}
+/*************************************************************************************************************************************************************/
+/*Mauritius*/
+
+.circular img{
+	width: 275px;
+	height: 275px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	}
+.circular img:hover{
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8)
+	}
+/************************************************************************************************************************************************************/
+/*Geography & Location*/
+
+.content-head {
+	margin: 50px;
+	}
+
+.content-body img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+.content-body{
+	margin: 50px;
+	}
+
+.content-bottom{
+	margin: 50px;
+	}
+/*************************************************************************************************************************************************************/
+#sega {
+	margin-right: 25px;
+	}
+
+#handicraft {
+	float:right;
+	margin-left: 25px;
+	}
+
+#mrufood {
+	margin-right: 25px;
+	}
+/*************************************************************************************************************************************************************/
+/*history*/
+
+#dutch {
+	margin-right: 25px;
+	}
+	
+#french {
+	float: right;
+	margin-left: 25px;
+	}
+
+#british {
+	margin-right: 25px;
+	}
+	
+#independence {
+	float:right;
+	margin-left: 25px;
+	}
+/*************************************************************************************************************************************************************/
+/*Contact Us*/
+.gmap {
+	margin: 0;
+	}
+	
+#add{
+	padding: 75px;
+	}
+span.glyphicon-home {
+	font-size: 20px;
+	margin-right: 10px;
+	}
+
+span.glyphicon-phone-alt {
+	font-size: 20px;
+	margin-right: 10px;
+	}
+
+span.glyphicon-phone {
+	font-size: 20px;
+	margin-right: 10px;
+	}
+
+span.glyphicon-envelope {
+	font-size: 20px;
+	margin-right: 10px;
+	}
+
+.col-md-8{
+	padding: 75px;}
+
+/*************************************************************************************************************************************************************/
+/*What to see*/
+.contenthide { display:none; }
+.mapcontent { height: auto;}
+
+/*************************************************************************************************************************************************************/
+/*Where to Stay*/
+
+/*************************************************************************************************************************************************************/
+/*Activities*/
+
+
+/* Lightbox */
+@media all {
+	.lightbox { display: none; }
+
+	/* override default feather style... */
+	.fixwidth {
+		background: rgba(256,256,256, 0.8);
+	}
+	.fixwidth .featherlight-content {
+		width: 500px;
+		padding: 25px;
+		color: #fff;
+		background: #111;
+	}
+	.fixwidth .featherlight-close {
+		color: #fff;
+		background: #333;
+	}
+
+}
+@media(max-width: 768px){
+	.fl-page h1 span { display: block; }
+	.fl-page .btn-download { float: none; margin-bottom: 1em; }
+}
+
+
+
+
+/* Effect 1: Brackets */
+.cl-effect-1 a::before,
+.cl-effect-1 a::after {
+	display: inline-block;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+	transition: transform 0.3s, opacity 0.2s;
+}
+
+.cl-effect-1 a::before {
+	margin-right: 10px;
+	content: '[';
+	-webkit-transform: translateX(20px);
+	-moz-transform: translateX(20px);
+	transform: translateX(20px);
+}
+
+.cl-effect-1 a::after {
+	margin-left: 10px;
+	content: ']';
+	-webkit-transform: translateX(-20px);
+	-moz-transform: translateX(-20px);
+	transform: translateX(-20px);
+}
+
+.cl-effect-1 a:hover::before,
+.cl-effect-1 a:hover::after,
+.cl-effect-1 a:focus::before,
+.cl-effect-1 a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
+}
+
+
+/* validation error */
+.error-text { color:red; }
+.error-border { border: solid red 1px; }
+
+/* Menu nav link color correction */
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {     
+color: #fff;
+background-color: #009FDD;	
+}
